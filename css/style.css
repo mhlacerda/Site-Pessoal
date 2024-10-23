@@ -13,182 +13,119 @@
   --fonte-titulo: "Work Sans, sans-serif";
   --fonte-paragrafo: "Montserrat, sans-serif";
 }
-
+*{
+  margin: 0;
+}
 body{
+  box-sizing: border-box;
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
-  box-sizing: border-box;
+}
+hr{
+  margin: 8% 5%;
+  border: 0;
+  border-top: 1px solid #00235b44;
 }
 
-.cabecalho{
-  display: flex;
-  justify-content: space-between;
-  padding: 3% 10% 3% 8%;
- }
-.cabecalho_nome {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--cor-texto);
+.titulo_intro{
+  margin: 0;
   font-family: var(--fonte-titulo);
-  font-weight: 400;
-  font-size: 22px;
+  font-size: 6.25rem;
 }
-#circulo{
-  max-width: 25px;
-  max-height: 25px;
+.titulo2{
+  font-family: var(--fonte-titulo);
+  font-size: 1.625rem;
 }
-.cabecalho_nome:hover{
-  color: var(--cor1);
-}
- .cabecalho_menu{
-  display: flex;
-  align-items: center;
- }
-.cabecalho_menu_link{
+.titulo3{
   text-decoration: none;
-  color: var(--cor-texto);
+  font-family: var(--fonte-titulo);
+  font-size: 1.125rem;
+}
+.paragrafo{
+  text-decoration: none;
   font-family: var(--fonte-paragrafo);
-  font-size: 18px;
-  padding: 0 5% 0 5%;
-}
-.cabecalho_menu_link:hover{
-  color: var(--cor1);
-}
-#cabecalho_menu_link{
-  border-style: solid;
-  border-color: var(--cor-texto);
-  border-width: 0px 1px 0px 1px;
+  font-size: 1rem;
+  letter-spacing: 0.09rem;
+  text-indent: 1.625rem;
+  
 }
 
-
-.apresentacao{
+main{
+  margin: 0 9% 0 9%;
   display: flex;
   align-items: center;
-  padding: 3% 6%;
-  justify-content: center;
-  gap: 10%;
+  gap: 15%;
 }
-/*define o tamanho da imagem maxima que vai ser renderizado*/
-.apresentacao_imagem {
-  max-width: 480px;
-  max-height: 480px;
+.imagemIntro{
+  width: 50%;
 }
-.apresentacao_conteudo{
-  width: 40%;
+
+.introducao{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1rem;
 }
-.apresentacao_conteudo_titulo{
-  font-family: var(--fonte-paragrafo);
-}
-h1.apresentacao_conteudo_titulo{
-  font-size: 100px;
-  padding: 0 0  30px 0;
-}
-h2.apresentacao_conteudo_titulo{
-  font-size: 22px;
-}
-.apresentacao_conteudo_texto{
-  font-family: var(--fonte-paragrafo);
-  font-size: 18px;
-}
-.apresentacao_links{
+
+.linkPaginas{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-.apresentacao_links_link{
-  justify-content: center;
-  border: 2px solid var(--cor-texto);
   text-align: center;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  font-size: 22px;
-  padding: 55px 0;
+  gap: 1rem;
+}  
+#linkPaginas-cv{
   text-decoration: none;
   color: var(--cor-fundo);
-  font-family: var(--fonte-titulo);
-  font-weight: bold;
+  background-color: var(--cor1);
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  vertical-align: center;
   transition: 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#apresentacao_curriculo{
- background-color: var(--cor1);
-}
-#apresentacao_projetos{
+#linkPaginas-projeto{
+  text-decoration: none;
+  color: var(--cor-fundo);
   background-color: var(--cor2);
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  vertical-align: center;
+  transition: 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#apresentacao_contato{
+#linkPaginas-contato{
+  text-decoration: none;
+  color: var(--cor-fundo);
   background-color: var(--cor3);
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  vertical-align: center;
+  transition: 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#apresentacao_curriculo:hover{
+#linkPaginas-cv:hover{
+  border: 0.0675rem solid var(--cor-texto);
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
-}
-#apresentacao_projetos:hover{
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-}
-#apresentacao_contato:hover{
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-}
-.apresentacao_links_link:hover{
   transform: rotateY(360deg);
 }
-
-
-.rodape_divisoria{
-  width: 100%;
-  padding: 10% 10% 0 10%;
-
-}
-.rodape{
-  display: flex;
-  justify-content: space-between;
-  padding: 5% 3% 3% 3%;
-}
-.rodape_blocos {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.rodape_titulo {
-  font-family: var(--fonte-titulo);
-  font-size: 18px;
-  font-weight: 600;
-}
-.rodape_texto {
-  font-family: var(--fonte-paragrafo);
-  font-size: 16px;
-}
-#email { 
-  font-family: var(--fonte-paragrafo);
-  font-size: 16px;
+#linkPaginas-projeto:hover{
+  border: 0.0675rem solid var(--cor-texto);
+  background-color: var(--cor-fundo);
   color: var(--cor-texto);
-  text-decoration: underline;
+  transform: rotateY(360deg);
 }
-#email:hover {
-  color: var(--cor1);
-}
-#telefone {
-  font-family: var(--fonte-paragrafo);
-  font-size: 16px;
+#linkPaginas-contato:hover{
+  transform: rotateY(360deg);
+  border: 0.0675rem solid var(--cor-texto);
+  background-color: var(--cor-fundo);
   color: var(--cor-texto);
-  text-decoration: underline;
-}
-#telefone:hover {
-  color: var(--cor1);
-}
-#site_wix {
-  font-family: var(--fonte-paragrafo);
-  font-size: 16px;
-  color: var(--cor-texto);
-  text-decoration: underline;
-}
-#site_wix:hover {
-  color: var(--cor1);
 }

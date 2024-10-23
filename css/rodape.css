@@ -1,0 +1,48 @@
+:root{
+  --cor-fundo:#FDFBFF;
+  --cor1: #E21818;
+  --cor2: #FFDD83;
+  --cor3: #98DFD6;
+  --cor-texto: #00235B;
+
+  --fonte-titulo: "Work Sans, sans-serif";
+  --fonte-paragrafo: "Montserrat, sans-serif";
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+.rodape{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+}
+#rodape-telefone{
+  text-decoration: underline;
+  color: var(--cor-texto);
+  text-align: left;
+  text-indent: 0;
+}
+#rodape-email{
+  color: var(--cor-texto);
+  text-decoration: underline;
+  text-indent: 0;
+}
+.site_wix{
+  color: var(--cor-texto);
+  text-decoration: underline;
+}
+
+#rodape-telefone:hover {
+  color: var(--cor1);
+}
+
+#rodape-email:hover {
+  color: var(--cor1);
+}
+.site_wix:hover {
+  color: var(--cor1);
+}
